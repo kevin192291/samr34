@@ -185,7 +185,6 @@ src/enddevice_demo.d src/enddevice_demo.o: ../src/enddevice_demo.c \
  ../src/ASF/thirdparty/wireless/lorawan/hal/inc/radio_driver_hal.h \
  ../src/config/conf_pmm.h ../src/config/conf_sio2host.h \
  ../src/ASF/thirdparty/wireless/lorawan/services/pds/inc/pds_interface.h \
- ../src/config/conf_certification.h ../src/enddevice_cert.h \
  ../src/ASF/thirdparty/wireless/lorawan/services/edbg_eui/edbg_eui.h \
  ../src/ASF/thirdparty/wireless/lorawan/hal/inc/atomic.h
 
@@ -574,10 +573,6 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 ../src/config/conf_sio2host.h:
 
 ../src/ASF/thirdparty/wireless/lorawan/services/pds/inc/pds_interface.h:
-
-../src/config/conf_certification.h:
-
-../src/enddevice_cert.h:
 
 ../src/ASF/thirdparty/wireless/lorawan/services/edbg_eui/edbg_eui.h:
 

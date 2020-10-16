@@ -1,41 +1,3 @@
-/**
-* \file  main.c
-*
-* \brief LORAWAN Demo Application main file
-*		
-*
-* Copyright (c) 2018 Microchip Technology Inc. and its subsidiaries. 
-*
-* \asf_license_start
-*
-* \page License
-*
-* Subject to your compliance with these terms, you may use Microchip
-* software and any derivatives exclusively with Microchip products. 
-* It is your responsibility to comply with third party license terms applicable 
-* to your use of third party software (including open source software) that 
-* may accompany Microchip software.
-*
-* THIS SOFTWARE IS SUPPLIED BY MICROCHIP "AS IS".  NO WARRANTIES, 
-* WHETHER EXPRESS, IMPLIED OR STATUTORY, APPLY TO THIS SOFTWARE, 
-* INCLUDING ANY IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY, 
-* AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT WILL MICROCHIP BE 
-* LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE, INCIDENTAL OR CONSEQUENTIAL 
-* LOSS, DAMAGE, COST OR EXPENSE OF ANY KIND WHATSOEVER RELATED TO THE 
-* SOFTWARE, HOWEVER CAUSED, EVEN IF MICROCHIP HAS BEEN ADVISED OF THE 
-* POSSIBILITY OR THE DAMAGES ARE FORESEEABLE.  TO THE FULLEST EXTENT 
-* ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN ANY WAY 
-* RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY, 
-* THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
-*
-* \asf_license_stop
-*
-*/
-/*
-* Support and FAQ: visit <a href="https://www.microchip.com/support/">Microchip Support</a>
-*/
- 
-/****************************** INCLUDES **************************************/
 #include "system_low_power.h"
 #include "radio_driver_hal.h"
 #include "lorawan.h"
@@ -48,6 +10,8 @@
 #include "extint.h"
 #include "conf_app.h"
 #include "sw_timer.h"
+#include "LED.h"
+#include "resources.h"
 #ifdef CONF_PMM_ENABLE
 #include "pmm.h"
 #include  "conf_pmm.h"
@@ -57,10 +21,6 @@
 #include "conf_sio2host.h"
 #if (ENABLE_PDS == 1)
 #include "pds_interface.h"
-#endif
-#if (CERT_APP == 1)
-#include "conf_certification.h"
-#include "enddevice_cert.h"
 #endif
 #include "sal.h"
 /************************** Macro definition ***********************************/
@@ -136,12 +96,8 @@ static void assertHandler(SystemAssertLevel_t level, uint16_t code)
     (void)level;
 }
 #endif /* #if (_DEBUG_ == 1) */
-
-/**
- * \mainpage
- * \section preface Preface
- * This is the reference manual for the LORAWAN Demo Application of EU Band
- */
+static uint8_t on = LON;
+static uint8_t off = LOFF;
 int main(void)
 {
 	
@@ -150,7 +106,23 @@ int main(void)
     /* Initialize the delay driver */
     delay_init();
     /* Initialize the board target resources */
-    board_init();
+    board_init
+	
+	
+	
+	set_LED_data(LED_AMBER,&on);
+	
+	delay_ms(1000);
+	
+	set_LED_data(LED_AMBER,&off);
+	
+	delay_ms(1000);
+	
+	set_LED_data(LED_AMBER,&on);
+	
+	delay_ms(1000);
+	
+	set_LED_data(LED_AMBER,&off);
 
     INTERRUPT_GlobalInterruptEnable();
 	/* Initialize the Serial Interface */
@@ -200,7 +172,6 @@ int main(void)
                     {
                         HAL_Radio_resources_init();
                         sio2host_init();
-                        /*printf("\r\nsleep_not_ok\r\n");*/
                     }
                 }
             }
@@ -209,7 +180,7 @@ int main(void)
     }
 }
 
-/* Initializes all the hardware and software modules used for Stack operation */
+
 static void driver_init(void)
 {
 	SalStatus_t sal_status = SAL_SUCCESS;
@@ -252,6 +223,3 @@ static void app_resources_uninit(void)
     HAL_RadioDeInit();
 }
 #endif
-/**
- End of File
- */

@@ -182,13 +182,15 @@ src/main.d src/main.o: ../src/main.c \
  ../src/config/conf_app.h \
  ../src/ASF/thirdparty/wireless/lorawan/services/sw_timer/inc/sw_timer.h \
  ../src/ASF/thirdparty/wireless/lorawan/sys/inc/system_task_manager.h \
+ ../src/ASF/thirdparty/wireless/lorawan/services/resources/inc/LED.h \
+ ../src/ASF/thirdparty/wireless/lorawan/services/resources/inc/resources.h \
+ ../src/ASF/thirdparty/wireless/lorawan/services/resources/inc/resources.h \
  ../src/ASF/thirdparty/wireless/lorawan/pmm/inc/pmm.h \
  ../src/ASF/thirdparty/wireless/lorawan/hal/inc/sleep.h \
  ../src/config/conf_pmm.h \
  ../src/ASF/thirdparty/wireless/lorawan/hal/inc/sleep_timer.h \
  ../src/config/conf_sio2host.h \
  ../src/ASF/thirdparty/wireless/lorawan/services/pds/inc/pds_interface.h \
- ../src/config/conf_certification.h ../src/enddevice_cert.h \
  ../src/ASF/thirdparty/wireless/lorawan/sal/inc/sal.h
 
 ../src/ASF/thirdparty/wireless/lorawan/sys/inc/system_low_power.h:
@@ -567,6 +569,12 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 
 ../src/ASF/thirdparty/wireless/lorawan/sys/inc/system_task_manager.h:
 
+../src/ASF/thirdparty/wireless/lorawan/services/resources/inc/LED.h:
+
+../src/ASF/thirdparty/wireless/lorawan/services/resources/inc/resources.h:
+
+../src/ASF/thirdparty/wireless/lorawan/services/resources/inc/resources.h:
+
 ../src/ASF/thirdparty/wireless/lorawan/pmm/inc/pmm.h:
 
 ../src/ASF/thirdparty/wireless/lorawan/hal/inc/sleep.h:
@@ -578,9 +586,5 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 ../src/config/conf_sio2host.h:
 
 ../src/ASF/thirdparty/wireless/lorawan/services/pds/inc/pds_interface.h:
-
-../src/config/conf_certification.h:
-
-../src/enddevice_cert.h:
 
 ../src/ASF/thirdparty/wireless/lorawan/sal/inc/sal.h:

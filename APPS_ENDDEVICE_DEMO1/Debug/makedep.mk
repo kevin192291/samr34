@@ -128,8 +128,6 @@ src\ASF\thirdparty\wireless\services\common_hw_timer\sam0\hw_timer.c
 
 src\ASF\thirdparty\wireless\services\nvm\sam0\sam_nvm.c
 
-src\enddevice_cert.c
-
 src\enddevice_demo.c
 
 src\main.c

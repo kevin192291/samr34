@@ -65,10 +65,6 @@
 #include "conf_sio2host.h"
 #include "pds_interface.h"
 
-#if (CERT_APP == 1)
-#include "conf_certification.h"
-#include "enddevice_cert.h"
-#endif
 #if (EDBG_EUI_READ == 1)
 #include "edbg_eui.h"
 #endif
@@ -189,17 +185,12 @@ static void demoTimerCb(void * cnt);
 static void lTimerCb(void * data);
 static SYSTEM_TaskStatus_t displayTask(void);
 static SYSTEM_TaskStatus_t processTask(void);
-static void processRunDemoCertApp(void);
 static void processRunRestoreBand(void);
 static void processJoinAndSend(void);
 static void processRunDemoApp(void);
-static void displayRunDemoCertApp(void);
 static void displayRunRestoreBand(void);
 static void displayJoinAndSend(void);
 static void displayRunDemoApp(void);
-#if (CERT_APP == 1)
-static void runCertApp(void);
-#endif
 #ifdef CONF_PMM_ENABLE
 static void appWakeup(uint32_t sleptDuration);
 static void app_resources_uninit(void);
@@ -231,9 +222,6 @@ static SYSTEM_TaskStatus_t displayTask(void)
 	{
 		case RESTORE_BAND_STATE:
 			displayRunRestoreBand();
-			break;
-		case DEMO_CERT_APP_STATE:
-			displayRunDemoCertApp();
 			break;
 		case DEMO_APP_STATE:
 			displayRunDemoApp();
@@ -283,9 +271,6 @@ static SYSTEM_TaskStatus_t processTask(void)
 		case RESTORE_BAND_STATE:
 			processRunRestoreBand();
 			break;
-		case DEMO_CERT_APP_STATE:
-			processRunDemoCertApp();
-			break;
 		case DEMO_APP_STATE:
 			processRunDemoApp();
 			break;
@@ -298,30 +283,6 @@ static SYSTEM_TaskStatus_t processTask(void)
 	}
 	
 	return SYSTEM_TASK_SUCCESS;
-}
-
-/*********************************************************************//**
-\brief    Activates demo application or certification application
-*************************************************************************/
-static void processRunDemoCertApp(void)
-{
-	if(serialBuffer == '1')
-	{
-		appTaskState = DEMO_APP_STATE;
-		appPostTask(DISPLAY_TASK_HANDLER);
-	}
-	#if (CERT_APP == 1)
-	else if(serialBuffer == '2')
-	{
-		runCertApp();
-	}
-	#endif
-	else
-	{
-		printf("Please enter a valid choice\r\n");
-		appTaskState = DEMO_CERT_APP_STATE;
-		appPostTask(DISPLAY_TASK_HANDLER);
-	}
 }
 
 /*********************************************************************//**
@@ -496,23 +457,6 @@ static void processRunDemoApp(void)
 		appTaskState = DEMO_APP_STATE;
 		appPostTask(DISPLAY_TASK_HANDLER);
 	}
-}
-
-/*********************************************************************//**
-\brief    Displays and activates LED's to choose between Demo
-		  and Certification application
-*************************************************************************/
-static void displayRunDemoCertApp(void)
-{
-	//sio2host_rx(rxchar,10);
-	set_LED_data(LED_AMBER,&off);
-	set_LED_data(LED_GREEN,&off);
-	printf("1. Demo application\r\n");
-	#if (CERT_APP == 1)
-	printf("2. Certification application\r\n");
-	#endif
-	printf("\r\n Select Application : ");
-	startReceiving = true;
 }
 
 /*********************************************************************//**
@@ -983,17 +927,6 @@ static void app_resources_uninit(void)
 }
 #endif
 
-
-#if (CERT_APP == 1)
-/*********************************************************************//*
- \brief      Function to runs certification application.
- ************************************************************************/
-static void  runCertApp(void)
-{
-    certAppEnabled = true;
-    cert_app_init();
-}
-#endif
 /*********************************************************************//*
  \brief      Timer callback for demo application.
              Used during the initial 5 sec wait period.
