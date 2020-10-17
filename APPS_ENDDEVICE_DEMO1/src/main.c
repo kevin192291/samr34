@@ -106,7 +106,8 @@ int main(void)
     /* Initialize the delay driver */
     delay_init();
     /* Initialize the board target resources */
-    board_init
+    board_init();
+	
 	
 	
 	

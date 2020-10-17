@@ -7953,7 +7953,6 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
  .debug_macro   0x00000000       0x18 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
  .debug_macro   0x00000000      0x2d8 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
- .debug_macro   0x00000000       0x2e src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
  .debug_macro   0x00000000      0x764 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
  .debug_macro   0x00000000      0x2a8 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
  .debug_macro   0x00000000       0x27 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
@@ -8262,7 +8261,6 @@ Discarded input sections
  .debug_macro   0x00000000      0x2d8 src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
  .debug_macro   0x00000000       0x2e src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
  .debug_macro   0x00000000      0x764 src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
- .debug_macro   0x00000000       0x16 src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
  .debug_macro   0x00000000       0x1f src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
  .debug_macro   0x00000000       0x26 src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
  .debug_macro   0x00000000      0x2a8 src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
@@ -12592,6 +12590,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x3df src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
  .debug_macro   0x00000000       0x16 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
  .debug_macro   0x00000000       0x2e src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
+ .debug_macro   0x00000000       0x10 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
  .debug_macro   0x00000000       0x1f src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
  .group         0x00000000        0x8 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_nvm.o
  .group         0x00000000        0x8 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_nvm.o
@@ -16359,9 +16358,9 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 src/main.o
  .debug_macro   0x00000000       0x18 src/main.o
  .debug_macro   0x00000000      0x2d8 src/main.o
- .debug_macro   0x00000000       0x2e src/main.o
+ .debug_macro   0x00000000       0x5e src/main.o
  .debug_macro   0x00000000      0x764 src/main.o
- .debug_macro   0x00000000       0x16 src/main.o
+ .debug_macro   0x00000000       0x10 src/main.o
  .debug_macro   0x00000000       0x1f src/main.o
  .debug_macro   0x00000000       0x26 src/main.o
  .debug_macro   0x00000000      0x2a8 src/main.o
@@ -19985,7 +19984,7 @@ OUTPUT(APPS_ENDDEVICE_DEMO1.elf elf32-littlearm)
  .debug_ranges  0x00001b60       0x30 src/main.o
  .debug_ranges  0x00001b90       0x58 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
 
-.debug_macro    0x00000000    0x30f03
+.debug_macro    0x00000000    0x30f77
  .debug_macro   0x00000000      0x5bf src/ASF/common2/services/delay/sam0/systick_counter.o
  .debug_macro   0x000005bf      0x92e src/ASF/common2/services/delay/sam0/systick_counter.o
  .debug_macro   0x00000eed      0x16d src/ASF/common2/services/delay/sam0/systick_counter.o
@@ -20172,100 +20171,101 @@ OUTPUT(APPS_ENDDEVICE_DEMO1.elf elf32-littlearm)
  .debug_macro   0x000217e9       0x10 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
  .debug_macro   0x000217f9       0x35 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
  .debug_macro   0x0002182e      0x122 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
- .debug_macro   0x00021950      0x7d9 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
- .debug_macro   0x00022129       0x18 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
- .debug_macro   0x00022141       0x1c src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
- .debug_macro   0x0002215d       0x16 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
- .debug_macro   0x00022173       0x1f src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
- .debug_macro   0x00022192       0x26 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
- .debug_macro   0x000221b8       0x2d src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
- .debug_macro   0x000221e5       0x2e src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
- .debug_macro   0x00022213       0x49 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
- .debug_macro   0x0002225c       0xab src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
- .debug_macro   0x00022307       0x4c src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
- .debug_macro   0x00022353      0x804 src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
- .debug_macro   0x00022b57       0x3a src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
- .debug_macro   0x00022b91       0x3a src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
- .debug_macro   0x00022bcb       0x16 src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
- .debug_macro   0x00022be1      0x5d4 src/ASF/thirdparty/wireless/lorawan/hal/src/sleep/sam0/sleep.o
- .debug_macro   0x000231b5      0x5ef src/ASF/thirdparty/wireless/lorawan/hal/src/sleep_timer/sam0/sleep_timer.o
- .debug_macro   0x000237a4       0x22 src/ASF/thirdparty/wireless/lorawan/hal/src/sleep_timer/sam0/sleep_timer.o
- .debug_macro   0x000237c6       0x16 src/ASF/thirdparty/wireless/lorawan/hal/src/sleep_timer/sam0/sleep_timer.o
- .debug_macro   0x000237dc      0x7dc src/ASF/thirdparty/wireless/lorawan/hal/src/sys.o
- .debug_macro   0x00023fb8       0x34 src/ASF/thirdparty/wireless/lorawan/hal/src/sys.o
- .debug_macro   0x00023fec       0x16 src/ASF/thirdparty/wireless/lorawan/hal/src/sys.o
- .debug_macro   0x00024002      0x837 src/ASF/thirdparty/wireless/lorawan/pmm/src/pmm.o
- .debug_macro   0x00024839       0x10 src/ASF/thirdparty/wireless/lorawan/pmm/src/pmm.o
- .debug_macro   0x00024849      0x345 src/ASF/thirdparty/wireless/lorawan/pmm/src/pmm.o
- .debug_macro   0x00024b8e       0x43 src/ASF/thirdparty/wireless/lorawan/pmm/src/pmm.o
- .debug_macro   0x00024bd1       0x28 src/ASF/thirdparty/wireless/lorawan/pmm/src/pmm.o
- .debug_macro   0x00024bf9      0x5eb src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
- .debug_macro   0x000251e4      0x10e src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
- .debug_macro   0x000252f2       0x86 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
- .debug_macro   0x00025378       0xaf src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
- .debug_macro   0x00025427       0x1c src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
- .debug_macro   0x00025443       0x7c src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
- .debug_macro   0x000254bf       0x4c src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
- .debug_macro   0x0002550b       0x7c src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
- .debug_macro   0x00025587       0x34 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
- .debug_macro   0x000255bb       0x4d src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
- .debug_macro   0x00025608      0x1b5 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
- .debug_macro   0x000257bd      0x5eb src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_au.o
- .debug_macro   0x00025da8      0x5eb src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_eu.o
- .debug_macro   0x00026393      0x5eb src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_in.o
- .debug_macro   0x0002697e      0x60f src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_jp.o
- .debug_macro   0x00026f8d      0x5eb src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_kr.o
- .debug_macro   0x00027578      0x5eb src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_na.o
- .debug_macro   0x00027b63      0x855 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_multiband.o
- .debug_macro   0x000283b8      0x1e1 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_multiband.o
- .debug_macro   0x00028599       0x1c src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_multiband.o
- .debug_macro   0x000285b5      0x7e7 src/ASF/thirdparty/wireless/lorawan/sal/src/sal.o
- .debug_macro   0x00028d9c       0x10 src/ASF/thirdparty/wireless/lorawan/sal/src/sal.o
- .debug_macro   0x00028dac       0x1c src/ASF/thirdparty/wireless/lorawan/sal/src/sal.o
- .debug_macro   0x00028dc8      0x7c2 src/ASF/thirdparty/wireless/lorawan/services/aes/src/hw/sam0/aes_engine.o
- .debug_macro   0x0002958a      0x7fd src/ASF/thirdparty/wireless/lorawan/services/edbg_eui/edbg_eui.o
- .debug_macro   0x00029d87       0x10 src/ASF/thirdparty/wireless/lorawan/services/edbg_eui/edbg_eui.o
- .debug_macro   0x00029d97      0x65b src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
- .debug_macro   0x0002a3f2       0x47 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
- .debug_macro   0x0002a439       0x2b src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
- .debug_macro   0x0002a464      0x118 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
- .debug_macro   0x0002a57c       0x2e src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
- .debug_macro   0x0002a5aa       0x10 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
- .debug_macro   0x0002a5ba       0x10 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
- .debug_macro   0x0002a5ca       0x1c src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
- .debug_macro   0x0002a5e6      0x661 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_nvm.o
- .debug_macro   0x0002ac47      0x658 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_task_handler.o
- .debug_macro   0x0002b29f       0x10 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_task_handler.o
- .debug_macro   0x0002b2af      0x659 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_wl.o
- .debug_macro   0x0002b908      0x7f7 src/ASF/thirdparty/wireless/lorawan/services/resources/src/LED.o
- .debug_macro   0x0002c0ff       0x16 src/ASF/thirdparty/wireless/lorawan/services/resources/src/LED.o
- .debug_macro   0x0002c115      0x7ec src/ASF/thirdparty/wireless/lorawan/services/resources/src/resources.o
- .debug_macro   0x0002c901       0x22 src/ASF/thirdparty/wireless/lorawan/services/resources/src/resources.o
- .debug_macro   0x0002c923      0x7ce src/ASF/thirdparty/wireless/lorawan/services/resources/src/temp_sensor.o
- .debug_macro   0x0002d0f1      0x83a src/ASF/thirdparty/wireless/lorawan/services/sw_timer/src/sw_timer.o
- .debug_macro   0x0002d92b       0x82 src/ASF/thirdparty/wireless/lorawan/services/sw_timer/src/sw_timer.o
- .debug_macro   0x0002d9ad       0x8e src/ASF/thirdparty/wireless/lorawan/services/sw_timer/src/sw_timer.o
- .debug_macro   0x0002da3b       0x10 src/ASF/thirdparty/wireless/lorawan/services/sw_timer/src/sw_timer.o
- .debug_macro   0x0002da4b       0x80 src/ASF/thirdparty/wireless/lorawan/sys/src/system_init.o
- .debug_macro   0x0002dacb       0x8f src/ASF/thirdparty/wireless/lorawan/sys/src/system_task_manager.o
- .debug_macro   0x0002db5a      0x84d src/ASF/thirdparty/wireless/lorawan/tal/sx1276/src/radio_driver_SX1276.o
- .debug_macro   0x0002e3a7       0x46 src/ASF/thirdparty/wireless/lorawan/tal/sx1276/src/radio_driver_SX1276.o
- .debug_macro   0x0002e3ed      0x2c5 src/ASF/thirdparty/wireless/lorawan/tal/sx1276/src/radio_driver_SX1276.o
- .debug_macro   0x0002e6b2       0x22 src/ASF/thirdparty/wireless/lorawan/tal/sx1276/src/radio_driver_SX1276.o
- .debug_macro   0x0002e6d4       0x10 src/ASF/thirdparty/wireless/lorawan/tal/sx1276/src/radio_driver_SX1276.o
- .debug_macro   0x0002e6e4       0x3a src/ASF/thirdparty/wireless/lorawan/tal/sx1276/src/radio_driver_SX1276.o
- .debug_macro   0x0002e71e      0x620 src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/hw_timer.o
- .debug_macro   0x0002ed3e       0x10 src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/hw_timer.o
- .debug_macro   0x0002ed4e      0x5ed src/ASF/thirdparty/wireless/services/nvm/sam0/sam_nvm.o
- .debug_macro   0x0002f33b      0x89f src/enddevice_demo.o
- .debug_macro   0x0002fbda       0x10 src/enddevice_demo.o
- .debug_macro   0x0002fbea      0x8c4 src/main.o
- .debug_macro   0x000304ae       0x47 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
- .debug_macro   0x000304f5      0x7ea ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
- .debug_macro   0x00030cdf      0x214 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
- .debug_macro   0x00030ef3       0x10 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
+ .debug_macro   0x00021950      0x7e4 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
+ .debug_macro   0x00022134       0x18 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
+ .debug_macro   0x0002214c       0x1c src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
+ .debug_macro   0x00022168       0x5e src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
+ .debug_macro   0x000221c6       0x10 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
+ .debug_macro   0x000221d6       0x1f src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
+ .debug_macro   0x000221f5       0x26 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
+ .debug_macro   0x0002221b       0x2d src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
+ .debug_macro   0x00022248       0x2e src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
+ .debug_macro   0x00022276       0x49 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
+ .debug_macro   0x000222bf       0xab src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
+ .debug_macro   0x0002236a       0x4c src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
+ .debug_macro   0x000223b6      0x804 src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
+ .debug_macro   0x00022bba       0x16 src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
+ .debug_macro   0x00022bd0       0x3a src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
+ .debug_macro   0x00022c0a       0x3a src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
+ .debug_macro   0x00022c44       0x16 src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
+ .debug_macro   0x00022c5a      0x5d4 src/ASF/thirdparty/wireless/lorawan/hal/src/sleep/sam0/sleep.o
+ .debug_macro   0x0002322e      0x5ef src/ASF/thirdparty/wireless/lorawan/hal/src/sleep_timer/sam0/sleep_timer.o
+ .debug_macro   0x0002381d       0x22 src/ASF/thirdparty/wireless/lorawan/hal/src/sleep_timer/sam0/sleep_timer.o
+ .debug_macro   0x0002383f       0x16 src/ASF/thirdparty/wireless/lorawan/hal/src/sleep_timer/sam0/sleep_timer.o
+ .debug_macro   0x00023855      0x7dc src/ASF/thirdparty/wireless/lorawan/hal/src/sys.o
+ .debug_macro   0x00024031       0x34 src/ASF/thirdparty/wireless/lorawan/hal/src/sys.o
+ .debug_macro   0x00024065       0x16 src/ASF/thirdparty/wireless/lorawan/hal/src/sys.o
+ .debug_macro   0x0002407b      0x837 src/ASF/thirdparty/wireless/lorawan/pmm/src/pmm.o
+ .debug_macro   0x000248b2       0x10 src/ASF/thirdparty/wireless/lorawan/pmm/src/pmm.o
+ .debug_macro   0x000248c2      0x345 src/ASF/thirdparty/wireless/lorawan/pmm/src/pmm.o
+ .debug_macro   0x00024c07       0x43 src/ASF/thirdparty/wireless/lorawan/pmm/src/pmm.o
+ .debug_macro   0x00024c4a       0x28 src/ASF/thirdparty/wireless/lorawan/pmm/src/pmm.o
+ .debug_macro   0x00024c72      0x5eb src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
+ .debug_macro   0x0002525d      0x10e src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
+ .debug_macro   0x0002536b       0x86 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
+ .debug_macro   0x000253f1       0xaf src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
+ .debug_macro   0x000254a0       0x1c src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
+ .debug_macro   0x000254bc       0x7c src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
+ .debug_macro   0x00025538       0x4c src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
+ .debug_macro   0x00025584       0x7c src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
+ .debug_macro   0x00025600       0x34 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
+ .debug_macro   0x00025634       0x4d src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
+ .debug_macro   0x00025681      0x1b5 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
+ .debug_macro   0x00025836      0x5eb src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_au.o
+ .debug_macro   0x00025e21      0x5eb src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_eu.o
+ .debug_macro   0x0002640c      0x5eb src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_in.o
+ .debug_macro   0x000269f7      0x60f src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_jp.o
+ .debug_macro   0x00027006      0x5eb src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_kr.o
+ .debug_macro   0x000275f1      0x5eb src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_na.o
+ .debug_macro   0x00027bdc      0x855 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_multiband.o
+ .debug_macro   0x00028431      0x1e1 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_multiband.o
+ .debug_macro   0x00028612       0x1c src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_multiband.o
+ .debug_macro   0x0002862e      0x7e7 src/ASF/thirdparty/wireless/lorawan/sal/src/sal.o
+ .debug_macro   0x00028e15       0x10 src/ASF/thirdparty/wireless/lorawan/sal/src/sal.o
+ .debug_macro   0x00028e25       0x1c src/ASF/thirdparty/wireless/lorawan/sal/src/sal.o
+ .debug_macro   0x00028e41      0x7c2 src/ASF/thirdparty/wireless/lorawan/services/aes/src/hw/sam0/aes_engine.o
+ .debug_macro   0x00029603      0x7fd src/ASF/thirdparty/wireless/lorawan/services/edbg_eui/edbg_eui.o
+ .debug_macro   0x00029e00       0x10 src/ASF/thirdparty/wireless/lorawan/services/edbg_eui/edbg_eui.o
+ .debug_macro   0x00029e10      0x65b src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
+ .debug_macro   0x0002a46b       0x47 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
+ .debug_macro   0x0002a4b2       0x2b src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
+ .debug_macro   0x0002a4dd      0x118 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
+ .debug_macro   0x0002a5f5       0x2e src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
+ .debug_macro   0x0002a623       0x10 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
+ .debug_macro   0x0002a633       0x1c src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
+ .debug_macro   0x0002a64f      0x661 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_nvm.o
+ .debug_macro   0x0002acb0      0x658 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_task_handler.o
+ .debug_macro   0x0002b308       0x10 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_task_handler.o
+ .debug_macro   0x0002b318      0x659 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_wl.o
+ .debug_macro   0x0002b971      0x7f7 src/ASF/thirdparty/wireless/lorawan/services/resources/src/LED.o
+ .debug_macro   0x0002c168       0x16 src/ASF/thirdparty/wireless/lorawan/services/resources/src/LED.o
+ .debug_macro   0x0002c17e      0x7ec src/ASF/thirdparty/wireless/lorawan/services/resources/src/resources.o
+ .debug_macro   0x0002c96a       0x22 src/ASF/thirdparty/wireless/lorawan/services/resources/src/resources.o
+ .debug_macro   0x0002c98c      0x7ce src/ASF/thirdparty/wireless/lorawan/services/resources/src/temp_sensor.o
+ .debug_macro   0x0002d15a      0x83a src/ASF/thirdparty/wireless/lorawan/services/sw_timer/src/sw_timer.o
+ .debug_macro   0x0002d994       0x82 src/ASF/thirdparty/wireless/lorawan/services/sw_timer/src/sw_timer.o
+ .debug_macro   0x0002da16       0x8e src/ASF/thirdparty/wireless/lorawan/services/sw_timer/src/sw_timer.o
+ .debug_macro   0x0002daa4       0x10 src/ASF/thirdparty/wireless/lorawan/services/sw_timer/src/sw_timer.o
+ .debug_macro   0x0002dab4       0x80 src/ASF/thirdparty/wireless/lorawan/sys/src/system_init.o
+ .debug_macro   0x0002db34       0x8f src/ASF/thirdparty/wireless/lorawan/sys/src/system_task_manager.o
+ .debug_macro   0x0002dbc3      0x84d src/ASF/thirdparty/wireless/lorawan/tal/sx1276/src/radio_driver_SX1276.o
+ .debug_macro   0x0002e410       0x46 src/ASF/thirdparty/wireless/lorawan/tal/sx1276/src/radio_driver_SX1276.o
+ .debug_macro   0x0002e456      0x2c5 src/ASF/thirdparty/wireless/lorawan/tal/sx1276/src/radio_driver_SX1276.o
+ .debug_macro   0x0002e71b       0x22 src/ASF/thirdparty/wireless/lorawan/tal/sx1276/src/radio_driver_SX1276.o
+ .debug_macro   0x0002e73d       0x10 src/ASF/thirdparty/wireless/lorawan/tal/sx1276/src/radio_driver_SX1276.o
+ .debug_macro   0x0002e74d       0x3a src/ASF/thirdparty/wireless/lorawan/tal/sx1276/src/radio_driver_SX1276.o
+ .debug_macro   0x0002e787      0x620 src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/hw_timer.o
+ .debug_macro   0x0002eda7       0x10 src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/hw_timer.o
+ .debug_macro   0x0002edb7      0x5ed src/ASF/thirdparty/wireless/services/nvm/sam0/sam_nvm.o
+ .debug_macro   0x0002f3a4      0x89f src/enddevice_demo.o
+ .debug_macro   0x0002fc43       0x10 src/enddevice_demo.o
+ .debug_macro   0x0002fc53      0x8cf src/main.o
+ .debug_macro   0x00030522       0x47 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
+ .debug_macro   0x00030569      0x7ea ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
+ .debug_macro   0x00030d53      0x214 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
+ .debug_macro   0x00030f67       0x10 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
 
-.debug_line     0x00000000    0x329a5
+.debug_line     0x00000000    0x329a3
  .debug_line    0x00000000      0xa39 src/ASF/common2/services/delay/sam0/systick_counter.o
  .debug_line    0x00000a39      0x948 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
  .debug_line    0x00001381      0xa1a src/ASF/sam0/boards/samr34_xplained_pro/board_init.o
@@ -20326,10 +20326,10 @@ OUTPUT(APPS_ENDDEVICE_DEMO1.elf elf32-littlearm)
  .debug_line    0x0002e3e0      0xcdb src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/hw_timer.o
  .debug_line    0x0002f0bb      0xb0f src/ASF/thirdparty/wireless/services/nvm/sam0/sam_nvm.o
  .debug_line    0x0002fbca     0x172d src/enddevice_demo.o
- .debug_line    0x000312f7     0x13f1 src/main.o
- .debug_line    0x000326e8      0x2bd ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
+ .debug_line    0x000312f7     0x13ef src/main.o
+ .debug_line    0x000326e6      0x2bd ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
 
-.debug_str      0x00000000    0xacdfb
+.debug_str      0x00000000    0xace6d
  .debug_str     0x00000000    0x926af src/ASF/common2/services/delay/sam0/systick_counter.o
                               0x92c96 (size before relaxing)
  .debug_str     0x000926af       0x94 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
@@ -20388,71 +20388,71 @@ OUTPUT(APPS_ENDDEVICE_DEMO1.elf elf32-littlearm)
                               0x92a49 (size before relaxing)
  .debug_str     0x000a0e79      0x76e src/ASF/sam0/utils/syscalls/gcc/syscalls.o
                                0x74cd (size before relaxing)
- .debug_str     0x000a15e7      0x5a2 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
-                              0x9a09c (size before relaxing)
- .debug_str     0x000a1b89      0x6e7 src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
+ .debug_str     0x000a15e7      0x614 src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o
+                              0x9a10e (size before relaxing)
+ .debug_str     0x000a1bfb      0x6e7 src/ASF/thirdparty/wireless/lorawan/hal/src/radio_driver_hal.o
                               0x9a167 (size before relaxing)
- .debug_str     0x000a2270      0x12e src/ASF/thirdparty/wireless/lorawan/hal/src/sleep/sam0/sleep.o
+ .debug_str     0x000a22e2      0x12e src/ASF/thirdparty/wireless/lorawan/hal/src/sleep/sam0/sleep.o
                               0x92dc2 (size before relaxing)
- .debug_str     0x000a239e      0x1a4 src/ASF/thirdparty/wireless/lorawan/hal/src/sleep_timer/sam0/sleep_timer.o
+ .debug_str     0x000a2410      0x1a4 src/ASF/thirdparty/wireless/lorawan/hal/src/sleep_timer/sam0/sleep_timer.o
                               0x94a35 (size before relaxing)
- .debug_str     0x000a2542      0x114 src/ASF/thirdparty/wireless/lorawan/hal/src/sys.o
+ .debug_str     0x000a25b4      0x114 src/ASF/thirdparty/wireless/lorawan/hal/src/sys.o
                               0x984d3 (size before relaxing)
- .debug_str     0x000a2656      0xd3e src/ASF/thirdparty/wireless/lorawan/pmm/src/pmm.o
+ .debug_str     0x000a26c8      0xd3e src/ASF/thirdparty/wireless/lorawan/pmm/src/pmm.o
                               0x99957 (size before relaxing)
- .debug_str     0x000a3394     0x23e2 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
+ .debug_str     0x000a3406     0x23e2 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_as.o
                               0x9595d (size before relaxing)
- .debug_str     0x000a5776       0x61 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_au.o
+ .debug_str     0x000a57e8       0x61 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_au.o
                               0x9595d (size before relaxing)
- .debug_str     0x000a57d7       0x61 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_eu.o
+ .debug_str     0x000a5849       0x61 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_eu.o
                               0x95956 (size before relaxing)
- .debug_str     0x000a5838       0x61 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_in.o
+ .debug_str     0x000a58aa       0x61 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_in.o
                               0x9595d (size before relaxing)
- .debug_str     0x000a5899      0x6c3 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_jp.o
+ .debug_str     0x000a590b      0x6c3 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_jp.o
                               0x95d49 (size before relaxing)
- .debug_str     0x000a5f5c       0x61 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_kr.o
+ .debug_str     0x000a5fce       0x61 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_kr.o
                               0x9595d (size before relaxing)
- .debug_str     0x000a5fbd       0x61 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_na.o
+ .debug_str     0x000a602f       0x61 src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_mband_na.o
                               0x9595d (size before relaxing)
- .debug_str     0x000a601e     0x180d src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_multiband.o
+ .debug_str     0x000a6090     0x180d src/ASF/thirdparty/wireless/lorawan/regparams/multiband/src/lorawan_multiband.o
                               0x9d291 (size before relaxing)
- .debug_str     0x000a782b      0x22f src/ASF/thirdparty/wireless/lorawan/sal/src/sal.o
+ .debug_str     0x000a789d      0x22f src/ASF/thirdparty/wireless/lorawan/sal/src/sal.o
                               0x98473 (size before relaxing)
- .debug_str     0x000a7a5a       0xff src/ASF/thirdparty/wireless/lorawan/services/aes/src/hw/sam0/aes_engine.o
+ .debug_str     0x000a7acc       0xff src/ASF/thirdparty/wireless/lorawan/services/aes/src/hw/sam0/aes_engine.o
                               0x98e17 (size before relaxing)
- .debug_str     0x000a7b59      0x23f src/ASF/thirdparty/wireless/lorawan/services/edbg_eui/edbg_eui.o
+ .debug_str     0x000a7bcb      0x23f src/ASF/thirdparty/wireless/lorawan/services/edbg_eui/edbg_eui.o
                               0x99ab7 (size before relaxing)
- .debug_str     0x000a7d98      0x8ad src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
+ .debug_str     0x000a7e0a      0x8ad src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_interface.o
                               0x93a6b (size before relaxing)
- .debug_str     0x000a8645      0x1db src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_nvm.o
+ .debug_str     0x000a86b7      0x1db src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_nvm.o
                               0x93beb (size before relaxing)
- .debug_str     0x000a8820      0x169 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_task_handler.o
+ .debug_str     0x000a8892      0x169 src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_task_handler.o
                               0x93b6a (size before relaxing)
- .debug_str     0x000a8989      0x13e src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_wl.o
+ .debug_str     0x000a89fb      0x13e src/ASF/thirdparty/wireless/lorawan/services/pds/src/pds_wl.o
                               0x939a0 (size before relaxing)
- .debug_str     0x000a8ac7      0x132 src/ASF/thirdparty/wireless/lorawan/services/resources/src/LED.o
+ .debug_str     0x000a8b39      0x132 src/ASF/thirdparty/wireless/lorawan/services/resources/src/LED.o
                               0x985d3 (size before relaxing)
- .debug_str     0x000a8bf9      0x13c src/ASF/thirdparty/wireless/lorawan/services/resources/src/resources.o
+ .debug_str     0x000a8c6b      0x13c src/ASF/thirdparty/wireless/lorawan/services/resources/src/resources.o
                               0x983a6 (size before relaxing)
- .debug_str     0x000a8d35      0x215 src/ASF/thirdparty/wireless/lorawan/services/resources/src/temp_sensor.o
+ .debug_str     0x000a8da7      0x215 src/ASF/thirdparty/wireless/lorawan/services/resources/src/temp_sensor.o
                               0x99c4b (size before relaxing)
- .debug_str     0x000a8f4a      0xd96 src/ASF/thirdparty/wireless/lorawan/services/sw_timer/src/sw_timer.o
+ .debug_str     0x000a8fbc      0xd96 src/ASF/thirdparty/wireless/lorawan/services/sw_timer/src/sw_timer.o
                               0x9a8b6 (size before relaxing)
- .debug_str     0x000a9ce0       0x57 src/ASF/thirdparty/wireless/lorawan/sys/src/system_init.o
+ .debug_str     0x000a9d52       0x57 src/ASF/thirdparty/wireless/lorawan/sys/src/system_init.o
                                0x3660 (size before relaxing)
- .debug_str     0x000a9d37       0x8b src/ASF/thirdparty/wireless/lorawan/sys/src/system_task_manager.o
+ .debug_str     0x000a9da9       0x8b src/ASF/thirdparty/wireless/lorawan/sys/src/system_task_manager.o
                                0x37f1 (size before relaxing)
- .debug_str     0x000a9dc2     0x1395 src/ASF/thirdparty/wireless/lorawan/tal/sx1276/src/radio_driver_SX1276.o
+ .debug_str     0x000a9e34     0x1395 src/ASF/thirdparty/wireless/lorawan/tal/sx1276/src/radio_driver_SX1276.o
                               0x9ad97 (size before relaxing)
- .debug_str     0x000ab157      0x2a1 src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/hw_timer.o
+ .debug_str     0x000ab1c9      0x2a1 src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/hw_timer.o
                               0x94321 (size before relaxing)
- .debug_str     0x000ab3f8       0x93 src/ASF/thirdparty/wireless/services/nvm/sam0/sam_nvm.o
+ .debug_str     0x000ab46a       0x93 src/ASF/thirdparty/wireless/services/nvm/sam0/sam_nvm.o
                               0x9356d (size before relaxing)
- .debug_str     0x000ab48b      0xbab src/enddevice_demo.o
+ .debug_str     0x000ab4fd      0xbab src/enddevice_demo.o
                               0x9b7d3 (size before relaxing)
- .debug_str     0x000ac036      0x1ee src/main.o
-                              0x9ad4b (size before relaxing)
- .debug_str     0x000ac224      0xbd7 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
+ .debug_str     0x000ac0a8      0x1ee src/main.o
+                              0x9adbd (size before relaxing)
+ .debug_str     0x000ac296      0xbd7 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
                                0x2c21 (size before relaxing)
 
 .debug_frame    0x00000000     0x4920
